@@ -3,12 +3,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.9s;
+  scroll-behavior: smooth;
 }
 
-body, html {
-  transition: 0.3s;
+html {
+  transition: 0.9s;
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: 0.9s;
   font-family: "Poppins", sans-serif;
   background-color: #f7f8f9;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar-track {
+  background: #dfdcdc;
+}
+body::-webkit-scrollbar {
+  width: 13px;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #019147;
+  border-radius: 5px;
 }
 
 .container {
@@ -16,6 +35,13 @@ body, html {
   width: 100%;
   padding: 0px 40px;
   margin: 0px auto;
+}
+
+section {
+  margin: 70px 0px;
+}
+section:nth-child(1) {
+  margin: 0px 0px;
 }
 
 button {
@@ -31,6 +57,7 @@ button {
 button:hover {
   opacity: 0.7;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .pre__navbar {
@@ -69,8 +96,15 @@ button:hover {
   height: 20px;
 }
 
+.brand {
+  color: #019147;
+  font-size: 28px;
+  text-decoration: none;
+}
+
 .navbar {
   padding: 20px 0px;
+  margin: 0px 0px;
 }
 .navbar .nav__content {
   display: flex;
@@ -80,10 +114,6 @@ button:hover {
 }
 .navbar .nav__content .nav__block a {
   text-decoration: none;
-}
-.navbar .nav__content .nav__block a h1 {
-  color: #019147;
-  font-size: 36px;
 }
 .navbar .nav__content .nav__block nav ul {
   display: flex;
@@ -145,6 +175,12 @@ button:hover {
   box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.0823529412);
   border-radius: 7px;
   margin-top: 50px;
+  position: relative;
+}
+.time .time__info .art1 {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
 }
 .time .time__info .time__welcome {
   padding: 43px 45px;
@@ -202,4 +238,177 @@ button:hover {
 .time .time__info .time__excel .excel__time-name .time__name-item img {
   width: 24px;
   height: 24px;
+}
+
+.quote img {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.quote .quote__content {
+  background-color: #E6F8EF;
+  padding: 34px 54px;
+  border-radius: 10px;
+  position: relative;
+}
+.quote .quote__content .quote__intro h1 {
+  text-align: left;
+  font-size: 48px;
+}
+.quote .quote__content .quote__generate {
+  max-width: 60%;
+  text-align: left;
+  margin-top: 30px;
+}
+.quote .quote__content .quote__generate h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.map .map__content .map__intro {
+  margin: 30px 0px;
+}
+.map .map__content .map__intro h1 {
+  font-size: 48px;
+  text-align: left;
+}
+
+.services {
+  position: relative;
+}
+.services .service__content {
+  background-color: #019147;
+  padding: 40px 40px;
+  border-radius: 10px;
+  position: relative;
+}
+.services .service__content .art1 {
+  position: absolute;
+  top: -40%;
+  left: -15%;
+}
+.services .service__content .service__intro {
+  text-align: center;
+  color: #fff;
+}
+.services .service__content .service__intro h1 {
+  font-size: 36px;
+}
+.services .service__content .service__intro p {
+  max-width: 60%;
+  margin: 10px auto;
+}
+.services .service__content .service__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+.services .service__content .service__cards .service__card-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 22px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.services .service__content .service__cards .service__card-item img {
+  width: 50px;
+  height: 50px;
+}
+.services .service__content .service__cards .service__card-item h1 {
+  margin: 14px 0px;
+}
+.services .service__content .service__cards .service__card-item p {
+  font-size: 14px;
+}
+.services .service__content .service__cards .service__card-item:hover {
+  background-color: #5eb98a;
+  color: #fff;
+}
+
+.contacts .contact__content {
+  padding: 50px 0px;
+  background-color: #b8f1d5;
+  border-radius: 10px;
+}
+.contacts .contact__content .contact__intro {
+  text-align: center;
+}
+.contacts .contact__content .contact__intro h1 {
+  font-size: 36px;
+}
+.contacts .contact__content .contact__intro p {
+  margin: 10px 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.contacts .contact__content .contact__intro button {
+  margin-top: 30px;
+  position: relative;
+  padding: 12px 52px;
+}
+.contacts .contact__content .contact__intro button img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 6%;
+  top: 15%;
+}
+
+footer {
+  background: #333333;
+}
+footer .footer__content {
+  padding: 40px 0px;
+}
+footer .footer__content .footer__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+footer .footer__content .footer__block .footer__block-item .brand h1 {
+  color: #fff;
+}
+footer .footer__content .footer__block .footer__block-item nav ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__content .footer__block .footer__block-item nav ul h1 {
+  color: #fff;
+}
+footer .footer__content .footer__block .footer__block-item nav ul li {
+  margin-top: 13px;
+  list-style: none;
+}
+footer .footer__content .footer__block .footer__block-item nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+footer .footer__content .footer__block .footer__block-item nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+footer .footer__content .footer__block .footer__block-item .pre__content-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer__content .footer__block .footer__block-item .pre__content-social p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+footer .footer__content .footer__block .footer__block-item .pre__content-social .social__item {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__content .footer__block .footer__block-item .pre__content-social .social__item a img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+footer .footer__content .footer__block .footer__block-item .pre__content-social .social__item a img:hover {
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */
