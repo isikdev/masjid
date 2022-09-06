@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f8f9;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0px 40px;
+  margin: 0px auto;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #FF9822;
+  border-radius: 4px;
+  border: 0px none;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.pre__navbar {
+  background-color: #121413;
+  padding: 10px 0px;
+}
+.pre__navbar .pre__nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  color: #fff;
+}
+.pre__navbar .pre__nav-content .pre__content-contact a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+}
+.pre__navbar .pre__nav-content .pre__content-contact a:nth-child(1) {
+  margin-left: 0px;
+}
+.pre__navbar .pre__nav-content .pre__content-social {
+  display: flex;
+}
+.pre__navbar .pre__nav-content .pre__content-social .social__item {
+  margin-left: 20px;
+}
+.pre__navbar .pre__nav-content .pre__content-social .social__item a {
+  margin-right: 10px;
+}
+.pre__navbar .pre__nav-content .pre__content-social .social__item a:nth-child(2) {
+  margin-right: 0px;
+}
+.pre__navbar .pre__nav-content .pre__content-social .social__item a img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar {
+  padding: 20px 0px;
+}
+.navbar .nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+.navbar .nav__content .nav__block a {
+  text-decoration: none;
+}
+.navbar .nav__content .nav__block a h1 {
+  color: #019147;
+  font-size: 36px;
+}
+.navbar .nav__content .nav__block nav ul {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.navbar .nav__content .nav__block nav ul li {
+  list-style: none;
+  margin-left: 18px;
+}
+.navbar .nav__content .nav__block nav ul li a {
+  color: #000;
+  font-weight: 500;
+  font-size: 22px;
+  transition: 0.4s;
+}
+.navbar .nav__content .nav__block nav ul li a:hover {
+  color: #019147;
+  border-bottom: 3px solid #019147;
+}
+
+.banner {
+  margin-top: 20px;
+}
+.banner .banner__intro {
+  background-image: url("../img/banner.svg");
+  background-size: cover;
+  padding: 100px 120px;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 30px;
+  color: #fff;
+}
+.banner .banner__intro h1 {
+  font-size: 48px;
+  font-weight: 600;
+  max-width: 60%;
+  line-height: 1.2em;
+  text-transform: capitalize;
+}
+.banner .banner__intro p {
+  max-width: 60%;
+  margin-top: 20px;
+}
+.banner button {
+  margin: 10px 0px;
+  text-transform: capitalize;
+}
+
+.time {
+  margin: 120px 0px;
+}
+.time .time__intro h1 {
+  font-size: 48px;
+}
+.time .time__info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.0823529412);
+  border-radius: 7px;
+  margin-top: 50px;
+}
+.time .time__info .time__welcome {
+  padding: 43px 45px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+.time .time__info .time__welcome .welcome__intro h1 {
+  font-size: 36px;
+}
+.time .time__info .time__welcome .welcome__intro p {
+  color: #646464;
+  margin: 10px 0px;
+}
+.time .time__info .time__welcome .welcome__intro button {
+  background-color: #019147;
+  margin-top: 20px;
+}
+.time .time__info .time__excel {
+  padding: 23px 45px;
+}
+.time .time__info .time__excel .excel__info-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.time .time__info .time__excel .excel__info-intro .excel__intro-item {
+  display: flex;
+  flex-direction: column;
+}
+.time .time__info .time__excel .excel__info-intro .excel__intro-item img {
+  margin: 0px auto;
+}
+.time .time__info .time__excel .excel__info-intro .excel__intro-item h1 {
+  text-align: center;
+}
+.time .time__info .time__excel .excel__time-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.time .time__info .time__excel .excel__time-name .time__name-item {
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+  background-color: #fff;
+  padding: 12px 12px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+}
+.time .time__info .time__excel .excel__time-name .time__name-item p {
+  color: #646464;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 14px;
+}
+.time .time__info .time__excel .excel__time-name .time__name-item img {
+  width: 24px;
+  height: 24px;
+}/*# sourceMappingURL=main.css.map */
