@@ -6,7 +6,7 @@ $green: #019147
     box-sizing: border-box
     transition: .9s
     scroll-behavior: smooth
-html 
+html
     transition: .9s
     scroll-behavior: smooth
 body
@@ -71,6 +71,8 @@ button
                     img
                         width: 20px
                         height: 20px
+.btn
+    display: none
 .brand
     color: #019147
     font-size: 28px
@@ -324,3 +326,113 @@ footer
                                 transition: .3s
                                 &:hover
                                     opacity: .5
+@media screen and (max-width: 1140px)
+    .container
+        max-width: 1140px
+        width: 100%
+        padding: 0px 30px
+        margin: 0px auto
+    .pre__navbar
+        .pre__nav-content
+            flex-direction: column
+    .navbar
+        .nav__content
+            .nav__links
+                nav
+                    ul
+                        flex-direction: column
+                        li
+                            a
+                                color: #fff
+            .nav__brand
+                display: flex
+                justify-content: space-between
+                align-items: center
+    .banner
+        .banner__intro
+            h1
+                font-size: 36px
+            p
+                font-size: 20px
+    .services
+        .service__content
+            .service__cards
+                grid-template-columns: 1fr 1fr
+    .time
+        .time__info
+            grid-template-columns: 1fr
+            .time__excel
+                overflow-y: scroll
+                width: 90%
+    .menu
+        min-height: 30vh
+        width: 100%
+        position: fixed
+        top: -120%
+        left: 0
+        z-index: 2000
+        background-color: $green
+        padding: 15px 20px
+        transition: .5s
+        display: block
+        .btn__close
+            position: absolute
+            right: 10px
+            top: 10px
+        ul
+            flex-direction: column
+            margin: 10px 0px
+            li
+                margin: 20px 0px
+                text-align: center
+                a
+                    color: #fff
+            button
+                max-width: 70%
+                margin: 0px auto
+    .btn
+        background: transparent
+        outline: none
+        border: 0px none
+        margin: 0px auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        img
+            max-width: 50%
+    .menu-active
+        top: 0
+    footer
+        .footer__content
+            .footer__block
+                grid-template-columns: 1fr 1fr
+@media screen and (max-width: 600px)
+    .pre__navbar
+        .pre__nav-content
+            .pre__content-contact
+                display: flex
+                flex-direction: column
+                a
+                    margin-left: 0px
+                    margin-top: 10px
+            .pre__content-social
+                margin: 20px 0px
+    .banner
+        .banner__intro
+            padding: 100px 25px
+            h1
+                max-width: 100%
+            p
+                max-width: 100%
+    .services
+        .service__content
+            .service__cards
+                grid-template-columns: 1fr
+    .quote 
+        .quote__content 
+            .quote__generate
+                max-width: 100%
+    footer
+        .footer__content
+            .footer__block
+                grid-template-columns: 1fr
